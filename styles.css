@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap');
+
+body{
+    background-color: darkslategrey;
+    font-family: 'Bebas Neue', sans-serif;
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 62px;
+}
+.cell-container{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: paleturquoise;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+.cell-container > div{
+    background-color: palevioletred;
+    border-radius: 5px;
+    color: white;
+    display: grid;
+    place-content: center;
+    min-height: 100%;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#restartBtn{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: palevioletred;
+    cursor: pointer;
+}
+.gameContainer{
+    background-color: paleturquoise;
+    border-radius: 10px;
+    padding: 25px;
+    color: palevioletred;
+}
+
+@media (max-width: 500px){
+   
+}
